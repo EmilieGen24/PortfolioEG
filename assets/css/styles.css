@@ -1,3 +1,50 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
 
+h1 {
+  font-size: 3rem;
+  padding-top: 10%;
+}
+
+h2, h3, h4 {
+  font-family: "Anton, sans-serif";
+}
+
+p {
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  color: #F6E9CF;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  font-size: 2rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url(../../fonts/Anton/Anton-Regular.ttf);
+  font-family: "Lato Light";
+  src: url(../../fonts/Open_Sans/static/OpenSans-Regular.ttf);
+}
 
 /*# sourceMappingURL=styles.css.map */

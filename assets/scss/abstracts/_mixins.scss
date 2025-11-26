@@ -1,0 +1,8 @@
+@use"variables" as var;
+
+@mixin button{
+    padding: 10px 20px;
+    background-color: var.$couleur-contact;
+    color: var.$couleur-secondaire;
+    border-radius: 5px;
+}

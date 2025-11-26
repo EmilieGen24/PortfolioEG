@@ -1,0 +1,33 @@
+@use "../abstracts/variables" as var;
+body {
+    font-family: var.$police-principale;
+}
+
+h1{
+    font-size: 3rem;
+    padding-top: 10%;
+}
+
+h2, h3, h4 {
+    font-family: var.$police-secondaire;
+}
+
+p {
+    font-size: 1rem;
+    font-family: var.$police-principale;
+    color: var.$couleur-principale;
+    // line-height: 2; hauteur espacement ligne
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+// Pour les mots en couleur :
+span {
+    font-size: 2rem;
+    }
