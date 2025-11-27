@@ -1,0 +1,37 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+footer{
+    background-color: var.$couleur-secondaire;
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      
+    }
+
+    .footer-logo{
+        width: 30%;
+
+        img{
+            width: 30%;
+        }
+    }
+
+    .copy{
+        width: 50%;
+        
+    }
+
+    .footer-icons{
+        width: 30%;
+        .icon{
+            stroke: var.$couleur-principale;
+        }
+        
+    }
+
+}

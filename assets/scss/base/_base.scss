@@ -1,11 +1,18 @@
 @use "../abstracts/variables" as var;
 body {
     font-family: var.$police-principale;
+    margin: 0;
 }
 
 h1{
-    font-size: 3rem;
-    padding-top: 10%;
+    font-size: 1.5rem;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    font-family: var.$police-secondaire;
+    text-transform: uppercase;
+    color: var.$couleur-principale;
+    text-align: center;
+    letter-spacing: 1.5px;
 }
 
 h2, h3, h4 {

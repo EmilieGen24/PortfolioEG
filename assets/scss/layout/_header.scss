@@ -1,2 +1,39 @@
 @use "../abstracts/variables" as var;
 @use "../abstracts/mixins" as mix;
+
+header{
+    background-color: var.$couleur-secondaire;
+   
+    .header-logo{
+        width: 30%;
+        img{
+            width: 30%;
+        }
+    }
+
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .menu-burger{
+            display: none;
+        }
+         ul{
+            display: flex;
+            
+            li{
+                padding-right: 15px;
+                padding-left: 15px;
+                border-left: 1px solid var.$couleur-principale;
+
+                a{
+                    color: var.$couleur-principale;
+                }
+                a:hover{
+
+                }
+            }
+        }
+    }            
+}

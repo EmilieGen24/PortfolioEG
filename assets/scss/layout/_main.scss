@@ -1,0 +1,29 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+// Accueil
+.home{
+    background-image: url(../img/Bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.card-home{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 10vh;
+}
+
+// About
+
+
+// Skills
+
+
+// Portfolio
+
+
+// Contact

@@ -1,10 +1,45 @@
+header {
+  background-color: black;
+}
+header .header-logo {
+  width: 30%;
+}
+header .header-logo img {
+  width: 30%;
+}
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .navbar .menu-burger {
+  display: none;
+}
+header .navbar ul {
+  display: flex;
+}
+header .navbar ul li {
+  padding-right: 15px;
+  padding-left: 15px;
+  border-left: 1px solid #F6E9CF;
+}
+header .navbar ul li a {
+  color: #F6E9CF;
+}
 body {
   font-family: "Open Sans", sans-serif;
+  margin: 0;
 }
 
 h1 {
-  font-size: 3rem;
-  padding-top: 10%;
+  font-size: 1.5rem;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  font-family: "Anton, sans-serif";
+  text-transform: uppercase;
+  color: #F6E9CF;
+  text-align: center;
+  letter-spacing: 1.5px;
 }
 
 h2, h3, h4 {
@@ -45,6 +80,57 @@ span {
   src: url(../../fonts/Anton/Anton-Regular.ttf);
   font-family: "Lato Light";
   src: url(../../fonts/Open_Sans/static/OpenSans-Regular.ttf);
+}
+.home {
+  background-image: url(../img/Bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.card-home {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 10vh;
+}
+
+footer {
+  background-color: black;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+footer .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer-logo {
+  width: 30%;
+}
+footer .footer-logo img {
+  width: 30%;
+}
+footer .copy {
+  width: 50%;
+}
+footer .footer-icons {
+  width: 30%;
+}
+footer .footer-icons .icon {
+  stroke: #F6E9CF;
+}
+
+.btn-send {
+  padding: 10px 20px;
+  background-color: #EBB945;
+  color: black;
+  border-radius: 5px;
+}
+.btn-send :hover {
+  box-shadow: 3px 3px 3px 5px rgb(200, 185, 100);
+  transition: all 0.3s ease;
 }
 
 /*# sourceMappingURL=styles.css.map */
