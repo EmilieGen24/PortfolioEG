@@ -10,28 +10,29 @@ footer{
         display: flex;
         justify-content: space-between;
         align-items: center;
-      
     }
 
     .footer-logo{
         width: 30%;
-
         img{
             width: 30%;
         }
     }
 
     .copy{
-        width: 50%;
-        
+        p{
+            font-size: 0.5rem;
+            text-align: center;
+        }
     }
-
+// rajouter hover et effet
     .footer-icons{
-        width: 30%;
+        display: flex;
+        gap: 20px;
+        width: 20%;
+        
         .icon{
             stroke: var.$couleur-principale;
         }
-        
     }
-
 }

@@ -26,15 +26,19 @@ header .navbar ul li {
 header .navbar ul li a {
   color: #F6E9CF;
 }
+header .navbar ul li a:hover {
+  text-decoration: underline;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-top: 10%;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
   font-family: "Anton, sans-serif";
   text-transform: uppercase;
   color: #F6E9CF;
@@ -42,8 +46,19 @@ h1 {
   letter-spacing: 1.5px;
 }
 
-h2, h3, h4 {
+h2 {
   font-family: "Anton, sans-serif";
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 p {
@@ -86,7 +101,6 @@ span {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
 }
 
 .card-home {
@@ -94,6 +108,47 @@ span {
   margin-right: auto;
   width: 50%;
   margin-top: 10vh;
+}
+
+#about {
+  background-image: url(../img/Bg-grille.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#about h2 {
+  color: #4FA389;
+  text-align: center;
+  padding-top: 40px;
+  margin: 20px;
+}
+#about .card-about {
+  background-color: black;
+  border-radius: 20px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25vh;
+}
+#about .card-about .about-container {
+  display: flex;
+}
+#about .card-about .about-container .about-img {
+  width: 60%;
+  position: relative;
+}
+#about .card-about .about-container .about-img img {
+  width: 100%;
+  clip-path: ellipse(50% 40%);
+  position: absolute;
+  right: 10%;
+  bottom: 20px;
+}
+#about .card-about .about-container .about-content {
+  padding: 20px;
+}
+#about .card-about .about-container .about-content span {
+  color: #4FA389;
 }
 
 footer {
@@ -112,11 +167,14 @@ footer .footer-logo {
 footer .footer-logo img {
   width: 30%;
 }
-footer .copy {
-  width: 50%;
+footer .copy p {
+  font-size: 0.5rem;
+  text-align: center;
 }
 footer .footer-icons {
-  width: 30%;
+  display: flex;
+  gap: 20px;
+  width: 20%;
 }
 footer .footer-icons .icon {
   stroke: #F6E9CF;

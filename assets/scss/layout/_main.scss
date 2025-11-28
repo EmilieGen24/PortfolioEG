@@ -7,7 +7,6 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
 }
 
 .card-home{
@@ -18,7 +17,53 @@
 }
 
 // About
+#about{
+    background-image: url(../img/Bg-grille.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    h2{
+        color: var.$couleur-about;
+        text-align: center;
+        padding-top: 40px;
+        margin: 20px;
+        }
 
+    .card-about{
+        background-color: var.$couleur-secondaire;
+        border-radius: 20px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25vh;
+        
+        .about-container{
+            display: flex;
+
+            .about-img{ 
+                width: 60%;
+                position: relative;
+                
+                img{
+                    width: 100%;
+                    clip-path: ellipse(50% 40%);
+                    position: absolute;
+                    right: 10%;
+                    bottom: 20px;                    
+                }
+            }
+         
+            .about-content{
+                padding: 20px;
+
+                span{
+                    color: var.$couleur-about;
+                }
+            }
+        }
+    }
+}
 
 // Skills
 
