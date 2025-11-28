@@ -150,6 +150,42 @@ span {
   color: #4FA389;
 }
 
+#skills {
+  background-image: url(../img/Bg-skills.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#skills h2 {
+  text-align: center;
+  padding-top: 40px;
+  margin: 20px;
+}
+#skills span {
+  color: #5F50F2;
+}
+#skills h3 {
+  color: #5F50F2;
+  font-weight: 900;
+  padding-bottom: 30px;
+}
+#skills .card-skills {
+  background-color: white;
+  border-radius: 20px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
+}
+#skills .card-skills .skills-content {
+  padding-bottom: 20px;
+}
+#skills .card-skills .skills-content li {
+  font-weight: 700;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 footer {
   background-color: black;
   padding-bottom: 5px;
