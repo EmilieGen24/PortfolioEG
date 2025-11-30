@@ -1,4 +1,14 @@
+// fonction menu burger
+function menu() {
+    const link = document.querySelector(".links");
+    if (link.style.display === "block") {
+        link.style.display = "none";
+    } else {
+        link.style.display = "block";
+     }
+}
 
+// fonctions carousel d'images
 function previous () {
     const widthSlider = document.querySelector(".carousel").offsetWidth;
     const sliderContent = document.querySelector(".carousel-container");

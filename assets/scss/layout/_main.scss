@@ -18,8 +18,8 @@
 
 // Page - About
 #about{
-    background-image: url(../img/Bg-grille.jpg);
-    background-position: center;
+    background-image: url(../img/Bg-aboutme.jpg);
+    background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
     
@@ -30,19 +30,24 @@
         margin: 20px;
         }   
 
+    h3{
+        color: var.$couleur-about;
+        font-weight: 900;
+    }
+
     .card-about{
         background-color: var.$couleur-secondaire;
-        border-radius: 20px;
+        border-radius: 10px;
         width: 70%;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 25vh;
+        margin-top: 15vh;
         
         .about-container{
             display: flex;
 
             .about-img{ 
-                width: 70%;
+                width: 80%;
                 position: relative;
                 
                 img{
@@ -73,7 +78,8 @@
     
     h2{
         text-align: center;
-        padding-top: 40px;
+        padding-top: 45px;
+        padding-bottom: 30px;
         margin: 20px;
         }
 
@@ -84,23 +90,23 @@
     h3{
         color: var.$couleur-skills;
         font-weight: 900;
-        padding-bottom: 30px;
+        padding-bottom: 10%;
     }
     
     .card-skills{
         background-color: white;
-        border-radius: 20px;
-        width: 70%;
+        border-radius: 10px;
+        width: 60%;
         margin-left: auto;
         margin-right: auto;
         margin-top: 10vh;
 
         .skills-content{
-            padding-bottom: 20px;
-            li{
-                font-weight:700;
-                padding-top: 20px;
-                padding-bottom: 20px;
+            img{
+                margin-left: 20%;
+                width: 60%;
+                border: solid 2px black;
+                border-radius: 5px;
             }
         }
     }
@@ -109,20 +115,19 @@
 // Portfolio
 #portfolio{
     background-image: url(../img/Bg-portfolio.jpg);
-    background-position:top;
+    background-position:center;
     background-size: cover;
     background-repeat: no-repeat;
 
     .card-portfolio{
-        background-color: white;
         margin-top: 10%;
-        padding-bottom: 10%;
         border-radius: 20px;
     }
     
     h2{
         text-align: center;
-        padding-top: 20px;
+        padding-top: 5%;
+        padding-bottom: 20px;
         margin: 20px;
         color: var.$couleur-portfolio;
         }
@@ -133,10 +138,8 @@
     }
 }
 
-// Elements du carousel
+// Elements du carousel dans portfolio
 .carousel{
-    background-color: white;
-    // border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -149,6 +152,7 @@
         scroll-behavior: smooth;
         height: 100%;
         width: 100%;
+        border-radius: 10px;
     }
     
     .carousel-content{
@@ -162,32 +166,131 @@
 
     // boutons du carousel
     .carousel-btn-prev {
-    position: absolute;
-    top: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    transform: translateY(-50%);
-    left: 10px;
-    transition: all 0.3s ease-in-out;
+        position: absolute;
+        top: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        transform: translateY(-50%);
+        left: 10px;
+        transition: all 0.3s ease;
     }
     .carousel-btn-prev:hover{
         background-color: var.$couleur-portfolio;
     }
 
     .carousel-btn-next {
-    position: absolute;
-    top: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    transform: translateY(-50%);
-    right: 10px;
-    transition: all 0.3s ease-in-out;
+        position: absolute;
+        top: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        transform: translateY(-50%);
+        right: 10px;
+        transition: all 0.3s ease;
     }
     .carousel-btn-next:hover{
         background-color: var.$couleur-portfolio;
+    }
+}
+
+// Page contact
+
+#contact{
+    background-image: url(../img/Bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    h2{
+        color: var.$couleur-contact;
+        text-align: center;
+        margin-top: 10%;
+    }
+
+    h3{
+        color: var.$couleur-contact;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    span{
+        color: var.$couleur-contact;
+    }
+}
+
+.card-contact{
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-top: 10vh;
+    display: flex;
+    gap: 20px;
+    padding: 50px;
+    border-radius: 20px;
+
+    form{
+        width: 50%;
+        label{
+            padding-bottom: 1%;
+            display: inline-block;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        input{
+            text-align: left;
+            display:block;
+            width: 100%;
+            margin-bottom: 20px;
+            
+        }
+        textarea{
+            text-align: left;
+            display:block;
+            margin-bottom: 20px;
+            width: 100%;
+            height: 70px;
+            
+        }
+        .btn-send{
+            width: 40%;
+            margin: auto;
+            text-align: center;
+        }
+    }
+
+    .card-name{
+        background-image: url(../img/Bg-grille.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 50%;
+        border: solid 2px black;
+        border-radius: 5px;
+        padding: 30px;
+        padding-top: 10%;
+
+        p{
+            color: var.$couleur-secondaire;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-family: var.$police-secondaire;
+            font-size: 1.4rem;
+        }
+
+        .icons{
+            text-align: center;
+            transition: all 0.3s ease;
+           
+            a:hover{
+                stroke: var.$couleur-contact;
+            }
+        }
+        
     }
 }

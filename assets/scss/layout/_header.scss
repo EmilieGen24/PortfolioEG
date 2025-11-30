@@ -1,6 +1,7 @@
 @use "../abstracts/variables" as var;
 @use "../abstracts/mixins" as mix;
 
+// Logo
 header{
     background-color: var.$couleur-secondaire;
    
@@ -11,6 +12,7 @@ header{
         }
     }
 // rajouter hover menu et couleur
+// Menu burger
     .navbar{
         display: flex;
         justify-content: space-between;
@@ -30,10 +32,11 @@ header{
 
                 a{
                     color: var.$couleur-principale;
+                    transition: all 0.3s ease;
+                    display: block;
                 }
                 a:hover{
                     text-decoration: underline;
-
                 }
             }
         }

@@ -25,6 +25,8 @@ header .navbar ul li {
 }
 header .navbar ul li a {
   color: #F6E9CF;
+  transition: all 0.3s ease;
+  display: block;
 }
 header .navbar ul li a:hover {
   text-decoration: underline;
@@ -47,7 +49,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Anton, sans-serif";
+  font-family: "Open Sans", sans-serif;
   font-size: 2rem;
   text-transform: uppercase;
 }
@@ -111,8 +113,8 @@ span {
 }
 
 #about {
-  background-image: url(../img/Bg-grille.jpg);
-  background-position: center;
+  background-image: url(../img/Bg-aboutme.jpg);
+  background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -122,19 +124,23 @@ span {
   padding-top: 40px;
   margin: 20px;
 }
+#about h3 {
+  color: #4FA389;
+  font-weight: 900;
+}
 #about .card-about {
   background-color: black;
-  border-radius: 20px;
+  border-radius: 10px;
   width: 70%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 25vh;
+  margin-top: 15vh;
 }
 #about .card-about .about-container {
   display: flex;
 }
 #about .card-about .about-container .about-img {
-  width: 70%;
+  width: 80%;
   position: relative;
 }
 #about .card-about .about-container .about-img img {
@@ -158,7 +164,8 @@ span {
 }
 #skills h2 {
   text-align: center;
-  padding-top: 40px;
+  padding-top: 45px;
+  padding-bottom: 30px;
   margin: 20px;
 }
 #skills span {
@@ -167,40 +174,37 @@ span {
 #skills h3 {
   color: #FD5A38;
   font-weight: 900;
-  padding-bottom: 30px;
+  padding-bottom: 10%;
 }
 #skills .card-skills {
   background-color: white;
-  border-radius: 20px;
-  width: 70%;
+  border-radius: 10px;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10vh;
 }
-#skills .card-skills .skills-content {
-  padding-bottom: 20px;
-}
-#skills .card-skills .skills-content li {
-  font-weight: 700;
-  padding-top: 20px;
-  padding-bottom: 20px;
+#skills .card-skills .skills-content img {
+  margin-left: 20%;
+  width: 60%;
+  border: solid 2px black;
+  border-radius: 5px;
 }
 
 #portfolio {
   background-image: url(../img/Bg-portfolio.jpg);
-  background-position: top;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 #portfolio .card-portfolio {
-  background-color: white;
   margin-top: 10%;
-  padding-bottom: 10%;
   border-radius: 20px;
 }
 #portfolio h2 {
   text-align: center;
-  padding-top: 20px;
+  padding-top: 5%;
+  padding-bottom: 20px;
   margin: 20px;
   color: #5F50F2;
 }
@@ -210,7 +214,6 @@ span {
 }
 
 .carousel {
-  background-color: white;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -223,6 +226,7 @@ span {
   scroll-behavior: smooth;
   height: 100%;
   width: 100%;
+  border-radius: 10px;
 }
 .carousel .carousel-content {
   min-width: 100%;
@@ -241,7 +245,7 @@ span {
   padding: 10px;
   transform: translateY(-50%);
   left: 10px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease;
 }
 .carousel .carousel-btn-prev:hover {
   background-color: #5F50F2;
@@ -255,10 +259,95 @@ span {
   padding: 10px;
   transform: translateY(-50%);
   right: 10px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease;
 }
 .carousel .carousel-btn-next:hover {
   background-color: #5F50F2;
+}
+
+#contact {
+  background-image: url(../img/Bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#contact h2 {
+  color: #EBB945;
+  text-align: center;
+  margin-top: 10%;
+}
+#contact h3 {
+  color: #EBB945;
+}
+#contact p {
+  text-align: center;
+}
+#contact span {
+  color: #EBB945;
+}
+
+.card-contact {
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-top: 10vh;
+  display: flex;
+  gap: 20px;
+  padding: 50px;
+  border-radius: 20px;
+}
+.card-contact form {
+  width: 50%;
+}
+.card-contact form label {
+  padding-bottom: 1%;
+  display: inline-block;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.card-contact form input {
+  text-align: left;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.card-contact form textarea {
+  text-align: left;
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 70px;
+}
+.card-contact form .btn-send {
+  width: 40%;
+  margin: auto;
+  text-align: center;
+}
+.card-contact .card-name {
+  background-image: url(../img/Bg-grille.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+  border: solid 2px black;
+  border-radius: 5px;
+  padding: 30px;
+  padding-top: 10%;
+}
+.card-contact .card-name p {
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Anton, sans-serif";
+  font-size: 1.4rem;
+}
+.card-contact .card-name .icons {
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.card-contact .card-name .icons a:hover {
+  stroke: #EBB945;
 }
 
 footer {
@@ -299,6 +388,159 @@ footer .footer-icons .icon {
 .btn-send :hover {
   box-shadow: 3px 3px 3px 5px rgb(200, 185, 100);
   transition: all 0.3s ease;
+}
+
+/* responsive tablette */
+@media screen and (max-width: 768px) {
+  header .navbar {
+    position: relative;
+    overflow: hidden;
+  }
+  header .navbar ul {
+    display: none;
+  }
+  header .navbar ul a {
+    padding: 14px 16px;
+  }
+  header .navbar .menu-burger {
+    display: flex;
+  }
+  header .navbar .menu-burger .icon-burger {
+    stroke: #F6E9CF;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  h1 {
+    font-size: 1.4rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 0.8rem;
+  }
+  .card-home {
+    width: 70%;
+  }
+  #about .card-about {
+    margin-top: 15vh;
+    width: 90%;
+  }
+  #contact .card-contact {
+    width: 90%;
+    padding: 20px;
+  }
+  #contact .card-contact form .btn-send {
+    width: 50%;
+    text-align: center;
+  }
+}
+/* responsive mobile */
+@media screen and (max-width: 576px) {
+  header .navbar .header-logo img {
+    width: 80%;
+  }
+  footer .footer-logo img {
+    width: 80%;
+  }
+  footer .footer-icons {
+    width: 40%;
+  }
+  h1 {
+    font-size: 1rem;
+    padding-bottom: 10%;
+    padding-top: 10%;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  h3 {
+    font-size: 0.8rem;
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  span {
+    font-size: 1rem;
+  }
+  .card-home {
+    width: 90%;
+    margin-top: 50%;
+  }
+  .card-home img {
+    width: 80%;
+    margin-left: 25px;
+  }
+  h1 {
+    padding-top: 30%;
+    padding-bottom: 30%;
+  }
+  #about .card-about {
+    margin-top: 30%;
+    width: 100%;
+  }
+  #about .card-about h2 {
+    margin-bottom: 100%;
+  }
+  #about .card-about .about-container {
+    flex-direction: column;
+  }
+  #about .card-about .about-container .about-img img {
+    width: 90%;
+    left: 18%;
+    bottom: 15%;
+  }
+  #skills h2 {
+    font-size: 1.2rem;
+  }
+  #skills span {
+    font-size: 1.3rem;
+  }
+  #skills h3 {
+    margin-top: 30%;
+    margin-bottom: 30%;
+    padding-bottom: 20%;
+  }
+  #skills .card-skills {
+    width: 90%;
+  }
+  #skills .card-skills .skills-content img {
+    width: 90%;
+    margin-left: 15px;
+  }
+  #portfolio .card-portfolio {
+    margin-top: 50%;
+  }
+  .carousel-button {
+    display: none;
+  }
+  .carousel .carousel-container {
+    flex-direction: column;
+    overflow: scroll;
+    gap: 20px;
+  }
+  #contact .card-contact {
+    width: 90%;
+    flex-direction: column;
+  }
+  #contact .card-contact form {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #contact .card-contact form label {
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+  #contact .card-contact .card-name {
+    width: 100%;
+  }
+  #contact .card-contact .card-name p {
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
