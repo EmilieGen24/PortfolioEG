@@ -8,6 +8,14 @@ function menu() {
      }
 }
 
+// fonction message de bienvenue
+const message = document.getElementById("welcome")
+
+setTimeout(function(){
+    message.textContent="Des interfaces qui racontent une histoire. La vôtre."
+},2000)
+
+
 // fonctions carousel d'images
 function previous () {
     const widthSlider = document.querySelector(".carousel").offsetWidth;

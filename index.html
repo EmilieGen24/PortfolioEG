@@ -14,23 +14,24 @@
                 <a href="index.html"><img src="assets/img/Logo.png" alt="Image du logo"></a>
             </div>
             <ul class="links">
-                <li><a href="about.html">A propos</a></li>
-                <li><a href="skills.html">Compétences</a></li>
-                <li><a href="portfolio.html">Réalisations</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a class="about-link" href="about.html">A propos</a></li>
+                <li><a class="skills-link" href="skills.html">Compétences</a></li>
+                <li><a class="portfolio-link" href="portfolio.html">Réalisations</a></li>
+                <li><a class="contact-link" href="contact.html">Contact</a></li>
             </ul>
             <!-- menu-burger avec fonction JS-->
             <div class="menu-burger">
-                <a href="" onclick="menu()"><svg class="icon-burger" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg></a>
+                <svg onclick="menu()" class="icon-burger" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
             </div>
         </nav>
     </header>
     <main>
         <section class="container">
+            <!-- <div id="welcome"></div> -->
             <div class="card-home">
                 <img src="assets/img/Logo-home.png" alt="Image du logo d'accueil">
             </div>
-            <h1> - Des interfaces qui racontent une histoire. La vôtre. - </h1>
+            <h1 id="welcome"></h1>
         </section>
     </main>
     <footer>

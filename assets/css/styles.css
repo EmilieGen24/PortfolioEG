@@ -31,6 +31,18 @@ header .navbar ul li a {
 header .navbar ul li a:hover {
   text-decoration: underline;
 }
+header .navbar ul li .about-link:hover {
+  color: #4FA389;
+}
+header .navbar ul li .skills-link:hover {
+  color: #FD5A38;
+}
+header .navbar ul li .portfolio-link:hover {
+  color: #5F50F2;
+}
+header .navbar ul li .contact-link:hover {
+  color: #EBB945;
+}
 
 body {
   font-family: "Open Sans", sans-serif;

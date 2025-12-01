@@ -11,7 +11,7 @@ header{
             width: 30%;
         }
     }
-// rajouter hover menu et couleur
+
 // Menu burger
     .navbar{
         display: flex;
@@ -37,6 +37,18 @@ header{
                 }
                 a:hover{
                     text-decoration: underline;
+                }
+                .about-link:hover{
+                    color: var.$couleur-about;
+                }
+                .skills-link:hover{
+                    color: var.$couleur-skills;
+                }
+                .portfolio-link:hover{
+                    color: var.$couleur-portfolio;
+                }
+                .contact-link:hover{
+                    color: var.$couleur-contact;
                 }
             }
         }
