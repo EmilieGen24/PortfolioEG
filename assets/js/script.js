@@ -9,10 +9,10 @@ function menu() {
 }
 
 // fonction message de bienvenue
-const message = document.getElementById("welcome")
+const message = document.querySelector(".welcome")
 
 setTimeout(function(){
-    message.textContent="Des interfaces qui racontent une histoire. La vôtre."
+    message.textContent="- Bienvenue sur mon site -";
 },2000)
 
 
